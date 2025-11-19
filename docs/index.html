@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Miss Pickles - Premium Wellness Pickle Juice</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
+    
+    :root {
+      --sage-green: #6B8E6B;
+      --deep-sage: #5A7A5A;
+      --cream: #F5F2E8;
+      --soft-beige: #E8E1D4;
+      --warm-white: #FEFCF7;
+      --sage-light: #A8C4A8;
+      --text-dark: #2D3D2D;
+      --text-medium: #5A6B5A;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, var(--cream) 0%, var(--soft-beige) 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-dark);
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      background: var(--warm-white);
+      border-radius: 24px;
+      padding: 60px 40px;
+      box-shadow: 
+        0 20px 60px rgba(107, 142, 107, 0.15),
+        0 8px 32px rgba(107, 142, 107, 0.1);
+      border: 1px solid rgba(168, 196, 168, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--sage-green), var(--sage-light), var(--sage-green));
+    }
+    
+    .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--sage-green);
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    
+    .tagline {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--text-medium);
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    
+    .subtitle {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--deep-sage);
+      margin-bottom: 32px;
+      line-height: 1.4;
+    }
+    
+    .benefits {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+    
+    .benefit {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--sage-green);
+      font-weight: 600;
+      font-style: italic;
+    }
+    
+    .coming-soon {
+      background: var(--sage-green);
+      color: var(--warm-white);
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 24px 0;
+      display: inline-block;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+    
+    .coming-soon:hover {
+      background: var(--deep-sage);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(107, 142, 107, 0.3);
+    }
+    
+    .description {
+      font-size: 1rem;
+      color: var(--text-medium);
+      line-height: 1.6;
+      margin-bottom: 32px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .footer {
+      font-size: 0.85rem;
+      color: var(--text-medium);
+      opacity: 0.7;
+      margin-top: 40px;
+    }
+    
+    @media (max-width: 640px) {
+      .container {
+        padding: 40px 24px;
+        margin: 10px;
+      }
+      
+      .brand {
+        font-size: 2.5rem;
+      }
+      
+      .benefits {
+        flex-direction: column;
+        gap: 16px;
+      }
+      
+      .tagline {
+        font-size: 0.9rem;
+      }
+      
+      .subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand">MISS PICKLES</h1>
+    <p class="tagline">Premium Wellness</p>
+    
+    <div class="benefits">
+      <span class="benefit">Hydrate.</span>
+      <span class="benefit">Restore.</span>
+      <span class="benefit">Renew.</span>
+    </div>
+    
+    <p class="description">
+      Experience the premium wellness revolution with Miss Pickles. 
+      Our carefully crafted pickle juice supports hydration and muscle recovery, 
+      bringing you nature's most refreshing recovery solution.
+    </p>
+    
+    <a href="#" class="coming-soon">Coming Soon</a>
+    
+    <div class="footer">
+      <p>Launching Soons</p>
+    </div>
+  </div>
+</body>
+</html>
